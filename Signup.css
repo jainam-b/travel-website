@@ -1,0 +1,110 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)), url(login.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.form-box
+{
+    width: 90%;
+    max-width: 470px;
+    height: 80%;
+    max-height: 380px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 50x 60px 70px;
+    text-align: center;
+}
+.form-box h1
+{
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #3c00a0;
+    position: relative;
+    margin-top: 20px;
+}
+.form-box h1::after
+{
+    content: ' ';
+    width: 60px;
+    height: 3px;
+    border-radius: 3px;
+    background: #3c00a0;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.input-field
+{
+    background: #eaeaea;
+    margin-left: 100px; ;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    margin-right: 64px;
+    margin-left: 80px;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+input
+{
+    width: 100%;
+    background: transparent;
+    border: 0px;
+    outline: 0px;
+    padding: 16px 15px;
+    margin-right: 63px;
+}
+.input-field i
+{
+    margin-left: 15px;
+    color: black;
+}
+.btn
+{
+    width: 100%;
+    display: flex;
+}
+.btn button 
+{
+    flex-basis: 21%;
+    background: #6a24da;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+    margin-left: 123px;
+    margin-right: -93px;
+}
+.input-group
+{
+    height: 200px;
+}
+.btn button.disable
+{
+    background: #eaeaea;
+    color: #555;
+}
+#home
+{
+    text-decoration: none;
+    color: black;
+}
