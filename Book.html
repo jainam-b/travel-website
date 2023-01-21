@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>bookonline Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Book.css">
+    </head>
+    <body>
+        
+        
+        <section class = "banner">
+            <h2>BOOK YOUR HOLIDAY </h2>
+            <div class = "card-container">
+                <div class = "card-content">
+                    <h3>Reservation</h3>
+                    <form>
+                        <div class = "form-row">
+                            <input type = "text" placeholder="Full Name" required>
+                            <input type = "text" placeholder="Phone Number" required>
+                        </div>
+                        <div class = "form-row">
+                            <input type = "email" placeholder="email" required>
+                        </div>
+                        <div class = "form-row">
+                            <input type = "number" placeholder="How Many Persons?" min = "1"  required>
+                            <input type = "date" class="date" required>Select date</input>
+                        </div>
+                        <div class = "form-row">
+                            <input type = "submit" value = "PROCEED TO PAY" class="pay" onclick="pay()">  
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <script> 
+            function pay(){
+                alert("BOOKED SUCCESSFULLY");
+                window.location.assign("Home.html")
+            }
+           
+          </script> 
+    </body>
+</html>
